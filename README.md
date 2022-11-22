@@ -2,7 +2,7 @@
 
 ![image](https://img.shields.io/badge/license-MIT-blue)
 
-![Capa do Projeto]()
+![Capa do Projeto](./images/front.jpg)
 
 # Sobre o Projeto
 
