@@ -1,0 +1,27 @@
+{
+    "estacoes": [
+      {
+        "id_estacao": 1,
+        "nome_estacao": "ABROLHOS",
+        "cod_regiao": "BA",
+        "uf": "BA",
+        "codigo_wmo": "A422",
+        "latitude": -17.963056,
+        "longitude": -38.703333,
+        "altitude": 20.93,
+        "data_fundacao": "2008-05-07"
+      },
+      {
+        "id_estacao": 2,
+        "nome_estacao": "ACARAU",
+        "cod_regiao": "CE",
+        "uf": "CE",
+        "codigo_wmo": "A360",
+        "latitude": -3.121111,
+        "longitude": -40.087222,
+        "altitude": 67.15,
+        "data_fundacao": "2009-04-21"
+      }
+      
+    ]
+  }

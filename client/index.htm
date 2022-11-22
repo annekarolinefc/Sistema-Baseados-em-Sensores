@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações metereológicas</title>
+
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Estações Metereológicas</h1>
+    </header>
+    <main>
+        <section class="cadastro">
+            <section class="container" style="display: block;">
+                <!--<h2>Cadastrar</h2>-->
+                <div class="container2" > <!--style="display: none;"-->
+                    <form action="" class="frmCadastro" id="frmCadastro">
+                        <div class="forminfo">
+                            <label for="nome">ID:</label>
+                            <input type="number" name="nome" id="id" placeholder="Insira o id da estação metereologica" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Insira o nome da estação metereologica" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="cod_regiao">Código da região:</label>
+                            <input type="text" maxlength="2" name="cod_regiao" id="cod_regiao" placeholder="Insira o código da região" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="uf">Uf:</label>
+                            <input type="text" name="uf" id="uf" placeholder="Insira o UF" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="iso">Código WMO:</label>
+                            <input type="text" maxlength="2" name="codigo_wmo" id="codigo_wmo" placeholder="Insira o código WMO" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="latitude">Latitude:</label>
+                            <input type="number" name="latitude" id="latitude" placeholder="Insira a latitude" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="longitude">Longitude:</label>
+                            <input type="number" name="longitude" id="longitude"  placeholder="Insira a longitude" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="altitude">Altitude:</label>
+                            <input type="number" name="altitude" id="altitude" placeholder="Insira a altitude" required>
+                        </div>
+                        <div class="forminfo">
+                            <label for="data_fundacao">Data da fundação:</label>
+                            <input type="date" name="data_fundacao" id="data_fundacao" placeholder="Insira a data da fundação" required>
+                        </div>
+                        <div class="forminfo">
+                            <input type="submit" class='btn-send' name="btn-send" id="btn-send" value="Cadastrar">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+
+        <div class="wrapper">
+            <section>
+                <div class="search">
+                    <label for="site-search">Buscar estação por ID:</label>
+                    <input type="search" id="site-search" name="id-search">
+                    <button id="buscarBtn">Buscar</button>
+                </div>
+                <header class="toolbar">
+                    <div>
+                        <h4><span id="total-estacoes"></span> estações metereológicas cadastradas</h4>
+                    </div>
+                </header>
+                
+                <div id="tabela">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--SCRIPT JS-->
+    <script src="js/estacao.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
